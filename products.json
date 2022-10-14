@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "category": ["category1"],
+    "title": "Peeled Melon",
+    "description": "Geniessen sie den Luxus einer Melone, ohne einen Finger zu krümmen um diese ekelhaft schmeckende Schale zu entfernen.",
+    "image": "melon.jpg",
+    "price": 2.99,
+    "unit": null
+  },
+  {
+    "id": 2,
+    "category": ["category1", "category2"],
+    "title": "Obamium",
+    "description": "Wollen sie was stabiles bauen? Nutzen sie Obamium.",
+    "image": "obamium.png",
+    "price": 2.99,
+    "unit": "kg"
+  },
+  {
+    "id": 3,
+    "category": ["category2"],
+    "title": "Bayernbolzen",
+    "description": "Wenn da noamale bubatz zua langweilig is, schlogn sie do direkt zua. A ganz andere eafahrung.",
+    "image": "melon.jpg",
+    "price": 4.99,
+    "unit": null
+  }
+]
