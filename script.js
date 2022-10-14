@@ -64,6 +64,7 @@ function fillGrid() {
   //     </div>
   //     <div class="card-content">
   //       <span class="card-title">Peeled Melon</span>
+  //       <div class="chip">Category 1</div>
   //       <p>Geniessen sie den Luxus einer Melone, ohne einen Finger zu krümmen um diese ekelhaft schmeckende Schale zu entfernen.</p>
   //       <p><h4>2,99 €</h4> inkl. MwSt.</p>
   //     </div>
@@ -115,6 +116,13 @@ function fillGrid() {
     const title = document.createElement('span')
     title.classList.add('card-title')
     title.innerText = product.title
+
+    for (category of product.category) {
+      const chip = document.createElement('div')
+      chip.classList.add('chip')
+      chip.innerText = category
+      cardContent.appendChild(chip)
+    }
 
     const description = document.createElement('p')
     description.innerText = product.description
