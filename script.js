@@ -5,7 +5,7 @@ const productGrid = document.getElementById('productGrid')
 const categorySelect = document.getElementById('categorySelect')
 let categoryInstance
 
-// Prepare data
+// Prepare data so we can access it from the whole script
 let productData
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -16,12 +16,14 @@ document.addEventListener('DOMContentLoaded', function () {
   // Fetch Products
   fetch('products.json')
     .then((response) =>
-      // Parse response
+      // Parse response as JSON
       response.json()
     )
     .then((data) => {
+      // Save data to global variable
       productData = data
 
+      // Set the category select to allow dynamic filtering
       let categories = []
 
       data.forEach((product) => {
@@ -39,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       })
 
-      // Create Category Select
+      // Create Category Select & store instance in global variable
       categoryInstance = M.FormSelect.init(categorySelect)
 
       // Update when category is changed
@@ -50,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 })
 
+// Method to fill the grid with products based on the category
 function fillGrid() {
   // Empty product grid
   productGrid.innerHTML = ''
@@ -85,21 +88,26 @@ function fillGrid() {
       }
     }
 
+    // If product is not in any selected category, skip it
     if (!inCategory) return
 
-    // Create Card
+    // Create Wrapper
     const wrapper = document.createElement('div')
     wrapper.classList.add('col', 's12', 'm12', 'l4')
 
+    // Create Card
     const card = document.createElement('div')
     card.classList.add('card')
 
+    // Create Card Image Wrapper
     const cardImage = document.createElement('div')
     cardImage.classList.add('card-image')
 
+    // Create Card Image
     const image = document.createElement('img')
     image.src = 'products/' + product.image
 
+    // Create Card Image Button
     const button = document.createElement('a')
     button.classList.add(
       'btn-floating',
@@ -109,14 +117,21 @@ function fillGrid() {
       'red'
     )
     button.innerHTML = '<i class="material-icons">add_shopping_cart</i>'
+    button.onclick = () => {
+      // Add product to cart !TODO!
+      // addToCart(product)
+    }
 
+    // Create Card Content
     const cardContent = document.createElement('div')
     cardContent.classList.add('card-content')
 
+    // Create Card Title
     const title = document.createElement('span')
     title.classList.add('card-title')
     title.innerText = product.title
 
+    // Create Card Category Chips
     for (category of product.category) {
       const chip = document.createElement('div')
       chip.classList.add('chip')
@@ -124,18 +139,22 @@ function fillGrid() {
       cardContent.appendChild(chip)
     }
 
+    // Create Card Description
     const description = document.createElement('p')
     description.innerText = product.description
 
+    // Create Card Price
     const price = document.createElement('p')
     if (!product.unit) {
+      // If no unit is specified, don't show it
       price.innerHTML = '<h4>' + product.price + ' €</h4> inkl. MwSt.'
     } else {
+      // If unit is specified, show it
       price.innerHTML =
         '<h4>' + product.price + ' € / ' + product.unit + '</h4> inkl. MwSt.'
     }
 
-    // Append Elements
+    // Append Elements to Body
     cardImage.appendChild(image)
     cardImage.appendChild(button)
     cardContent.appendChild(title)
