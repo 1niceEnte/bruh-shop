@@ -140,7 +140,7 @@ function fillGrid() {
 
       if(category == "Neu"){
         const icon = document.createElement('i')
-        icon.classList.add('close material-icons')
+        icon.classList.add('close','material-icons')
         icon.innerText = 'new_releases'
         chip.prepend(icon)
       }
