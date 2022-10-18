@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "category": ["Früchte","Neu"],
+    "category": ["Früchte"],
     "title": "Peeled Melon",
     "description": "Geniessen sie den Luxus einer Melone, ohne einen Finger zu krümmen um diese ekelhaft schmeckende Schale zu entfernen.",
     "image": "melon.jpg",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "category": ["Materialien", "Neu"],
+    "category": ["Materialien"],
     "title": "Obamium",
     "description": "Wollen sie was stabiles bauen? Nutzen sie Obamium.",
     "image": "obamium.png",
@@ -24,6 +24,24 @@
     "description": "Wenn da noamale bubatz zua langweilig is, schlogn sie do direkt zua. A ganz andere eafahrung.",
     "image": "bayernbolzen.jpg",
     "price": 4.99,
+    "unit": null
+  }
+  {
+    "id": 4,
+    "category": ["Gegenstände","Neu"],
+    "title": "Doppelkopf Münze",
+    "description": "Wie wieder auf Kopf hoffen, wofür auch einfach hiermit immer Kopf haben!",
+    "image": "doppelkopf.jpg",
+    "price": 12.99,
+    "unit": null
+  }
+  {
+    "id": 5,
+    "category": ["Gegenstände","Neu"],
+    "title": "Unsichtbarkeitssand-Sanduhr",
+    "description": "Sie können damit die Zeit beschleunigen. Drehen Sie diese Sanduhr um, der Sand fließt schneller nach unten als Licht.",
+    "image": "sanduhr.jpg",
+    "price": 4.20,
     "unit": null
   }
 ]
