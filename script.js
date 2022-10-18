@@ -97,7 +97,7 @@ function fillGrid() {
 
     // Create Card
     const card = document.createElement('div')
-    card.classList.add('card' , 'hoverable')
+    card.classList.add('card', 'hoverable')
 
     // Create Card Image Wrapper
     const cardImage = document.createElement('div')
@@ -138,10 +138,12 @@ function fillGrid() {
       chip.classList.add('chip')
       chip.innerText = category
 
-      if(category == "Neu"){
+      if (category == 'Neu') {
         const icon = document.createElement('i')
-        icon.classList.add('close','material-icons')
+        icon.classList.add('close', 'material-icons')
         icon.innerText = 'new_releases'
+        icon.style.cursor = 'initial'
+        icon.style['pointer-events'] = 'none'
         chip.prepend(icon)
       }
 
@@ -154,13 +156,20 @@ function fillGrid() {
 
     // Create Card Price
     const price = document.createElement('p')
+
+    // Format Price
+    const priceString = product.price.toLocaleString('de-DE', {
+      style: 'currency',
+      currency: 'EUR',
+    })
+
     if (!product.unit) {
       // If no unit is specified, don't show it
-      price.innerHTML = '<h4>' + product.price + ' €</h4> inkl. MwSt.'
+      price.innerHTML = '<h4>' + priceString + ' </h4> inkl. MwSt.'
     } else {
       // If unit is specified, show it
       price.innerHTML =
-        '<h4>' + product.price + ' € / ' + product.unit + '</h4> inkl. MwSt.'
+        '<h4>' + priceString + ' / ' + product.unit + '</h4> inkl. MwSt.'
     }
 
     // Append Elements to Body
