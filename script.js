@@ -97,8 +97,7 @@ function fillGrid() {
 
     // Create Card
     const card = document.createElement('div')
-    card.classList.add('card')
-    card.classList.add('hoverable')
+    card.classList.add('card' , 'hoverable')
 
     // Create Card Image Wrapper
     const cardImage = document.createElement('div')
