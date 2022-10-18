@@ -93,7 +93,7 @@ function fillGrid() {
 
     // Create Wrapper
     const wrapper = document.createElement('div')
-    wrapper.classList.add('col', 's12', 'm12', 'l4')
+    wrapper.classList.add('col', 's12', 'm12', 'l6', 'xl4')
 
     // Create Card
     const card = document.createElement('div')
@@ -106,6 +106,7 @@ function fillGrid() {
     // Create Card Image
     const image = document.createElement('img')
     image.src = 'products/' + product.image
+    image.style = 'height: 300px; object-fit: cover;'
 
     // Create Card Image Button
     const button = document.createElement('a')
