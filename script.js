@@ -136,7 +136,13 @@ function fillGrid() {
     for (category of product.category) {
       const chip = document.createElement('div')
       chip.classList.add('chip')
-      chip.innerText = category
+      if (category == "Neu"){
+        chipContent = chip.appendChild(i)   //innerText = "<i class="close material-icons">new_releases</i>"
+        chipContent.classList.add('close material-icons')
+        chipContent.innerText = new_releases
+      }
+      chipText = chip.appendChild(p) 
+      chipText.innerText = category
       cardContent.appendChild(chip)
     }
 
