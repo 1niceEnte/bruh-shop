@@ -25,7 +25,7 @@
     "image": "bayernbolzen.jpg",
     "price": 4.99,
     "unit": null
-  }
+  },
   {
     "id": 4,
     "category": ["Gegenstände","Neu"],
@@ -34,7 +34,7 @@
     "image": "doppelkopf.jpg",
     "price": 12.99,
     "unit": null
-  }
+  },
   {
     "id": 5,
     "category": ["Gegenstände","Neu"],
