@@ -137,6 +137,14 @@ function fillGrid() {
       const chip = document.createElement('div')
       chip.classList.add('chip')
       chip.innerText = category
+
+      if(category == "Neu"){
+        const icon = document.createElement('i')
+        icon.classList.add('material-icons')
+        icon.innerText = 'new_releases'
+        chip.prepend(icon)
+      }
+
       cardContent.appendChild(chip)
     }
 
