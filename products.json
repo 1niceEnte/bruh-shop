@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "category": ["Bubatz","Neu"],
+    "category": ["Bubatz"],
     "title": "Bayernbolzen",
     "description": "Wenn da noamale bubatz zua langweilig is, schlogn sie do direkt zua. A ganz andere eafahrung.",
     "image": "bayernbolzen.jpg",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "category": ["Gegenstände","Neu"],
+    "category": ["Gegenstände"],
     "title": "Doppelkopf Münze",
     "description": "Wie wieder auf Kopf hoffen, wofür auch einfach hiermit immer Kopf haben!",
     "image": "doppelkopf.jpg",
@@ -37,11 +37,20 @@
   },
   {
     "id": 5,
-    "category": ["Gegenstände","Neu"],
+    "category": ["Gegenstände"],
     "title": "Unsichtbarkeitssand-Sanduhr",
     "description": "Sie können damit die Zeit beschleunigen. Drehen Sie diese Sanduhr um, der Sand fließt schneller nach unten als Licht.",
     "image": "sanduhr.jpg",
     "price": 4.20,
+    "unit": null
+  },
+  {
+    "id": 6,
+    "category": ["Gegenstände","Neu"],
+    "title": "Fluxkompensator",
+    "description": "Geht in den Zigarettenanzünder und macht uhhhhhhhh...",
+    "image": "fluxcomp.jpg",
+    "price": 1299.99,
     "unit": null
   }
 ]
