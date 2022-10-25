@@ -61,5 +61,14 @@
     "image": "carcharger.jpg",
     "price": 14.99,
     "unit": null
+  },
+  {
+    "id": 8,
+    "category": ["Gegenstände","Neu"],
+    "title": "Zigarettenanzünder Starthilfekabel",
+    "description": "Ist doch blöd die Pole zu finden. Dazu kann man sich selbst Starthilfe geben",
+    "image": "starthilfe.jpg",
+    "price": 9.99,
+    "unit": null
   }
 ]
