@@ -1,0 +1,4 @@
+#productGrid .card {
+  /* Temp fix for grid */
+  height: 600px;
+}
