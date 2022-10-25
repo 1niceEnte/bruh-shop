@@ -52,5 +52,14 @@
     "image": "fluxcomp.jpg",
     "price": 1299.99,
     "unit": null
+  },
+  {
+    "id": 7,
+    "category": ["Gegenstände","Neu"],
+    "title": "Zigarettenanzünder Handylader",
+    "description": "Wir haben diesen Handylader speziell entworfen und designed, sodass er in kein einzigen Zigarettenanzünder passt!",
+    "image": "carcharger.jpg",
+    "price": 14.99,
+    "unit": null
   }
 ]
