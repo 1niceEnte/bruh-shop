@@ -10,8 +10,11 @@ let productData
 
 document.addEventListener('DOMContentLoaded', function () {
   // Init Parallax
-  var elems = document.querySelectorAll('.parallax')
-  M.Parallax.init(elems)
+  const parallaxElement = document.querySelectorAll('.parallax')
+  M.Parallax.init(parallaxElement)
+
+  const FABElements = document.querySelectorAll('.fixed-action-btn')
+  M.FloatingActionButton.init(FABElements)
 
   // Fetch Products
   fetch('products.json')
@@ -119,7 +122,10 @@ function fillGrid() {
     )
     button.innerHTML = '<i class="material-icons">add_shopping_cart</i>'
     button.onclick = () => {
-      // Add product to cart !TODO!
+      // Show Toast with product name
+      M.toast({
+        html: `<img src="images/icon.png" style="height:24px;margin-right:5px"><span>${product.title} zum Warenkorb hinzugefügt</span>`,
+      })
       // addToCart(product)
     }
 
