@@ -12,6 +12,15 @@ document.addEventListener('DOMContentLoaded', function () {
 // Get local storage data
 const cartData = JSON.parse(localStorage.getItem('cart')) || []
 
+const cartItemCount = document.getElementById('cartItemCount')
+function updateCartItemCount() {
+  cartItemCount.innerText = cartData.reduce(
+    (total, product) => total + product.quantity,
+    0
+  )
+}
+updateCartItemCount()
+
 function addToCart(id) {
   // Find Element in cartData
   const product = productData.find((product) => product.id === id)
@@ -28,6 +37,7 @@ function addToCart(id) {
     })
   }
 
+  updateCartItemCount()
   // Update local storage
   localStorage.setItem('cart', JSON.stringify(cartData))
 }
@@ -44,6 +54,7 @@ function removeFromCart(id) {
     }
   }
 
+  updateCartItemCount()
   // Update local storage
   localStorage.setItem('cart', JSON.stringify(cartData))
 }
