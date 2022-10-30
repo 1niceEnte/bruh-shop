@@ -126,7 +126,7 @@ function fillGrid() {
       M.toast({
         html: `<img src="images/icon.png" style="height:24px;margin-right:5px"><span>${product.title} zum Warenkorb hinzugefügt</span>`,
       })
-      // addToCart(product)
+      addToCart(product.id)
     }
 
     // Create Card Content

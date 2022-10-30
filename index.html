@@ -48,7 +48,11 @@
 
     <!-- Materialize FAB with badge -->
     <div class="fixed-action-btn">
-      <a class="btn-floating btn-large red">
+      <a
+        class="btn-floating btn-large red modal-trigger"
+        href="#"
+        data-target="cartModal"
+      >
         <i class="large material-icons">shopping_cart</i>
       </a>
       <ul>
@@ -56,6 +60,19 @@
           <a class="btn-floating red"> 15 </a>
         </li>
       </ul>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <h4>Einkaufswagen</h4>
+        <ul class="collection" id="cartItemList"></ul>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+          >Fortfahren</a
+        >
+      </div>
     </div>
 
     <footer class="page-footer indigo darken-3">
@@ -77,7 +94,8 @@
     </footer>
 
     <!--JavaScript at end of body for optimized loading-->
-    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>
