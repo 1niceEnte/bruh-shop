@@ -196,3 +196,25 @@ function fillGrid() {
       '<div class="col s12"><h4>Keine Produkte mit den angegebenen Filtern</h4></div>'
   }
 }
+
+// Get last commit date
+fetch('https://api.github.com/repos/1niceEnte/bruh-shop/commits/main')
+  .then((res) => res.json())
+  .then((data) => {
+    // Last Updated intl german relative
+    const lastUpdated = new Date(data.commit.author.date)
+    const lastUpdatedIntl = new Intl.RelativeTimeFormat('de', {
+      numeric: 'auto',
+    })
+    const lastUpdatedRelative = lastUpdatedIntl.format(
+      Math.round((lastUpdated - Date.now()) / 1000 / 60 / 60 / 24),
+      'day'
+    )
+
+    document.getElementById(
+      'lastUpdated'
+    ).innerText = `Letztes Update: ${lastUpdatedRelative}`
+  })
+
+// Update year
+document.getElementById('copyrightYear').innerText = new Date().getFullYear()
