@@ -1,5 +1,53 @@
 // Shoppingn Cart Logic
 
+let discountData
+// Load discount code from json
+fetch('discounts.json')
+  .then((response) => response.json())
+  .then((data) => {
+    // Save data to global variable
+    discountData = data
+  })
+
+const discountCode = document.getElementById('discountCode')
+const applyDiscountCode = document.getElementById('applyDiscountCode')
+const totalPrice = document.getElementById('totalPrice')
+
+// Add Event Listener to apply discount button
+applyDiscountCode.addEventListener('click', applyDiscount)
+
+function applyDiscount() {
+  // Get discount code from input
+  const code = discountCode.value
+
+  // Check if code is valid
+  const discount = discountData.find((discount) => discount.code === code)
+
+  if (discount) {
+    // Get total price
+    const totalPrice = cartData.reduce(
+      (total, product) => total + product.price * product.quantity,
+      0
+    )
+
+    // Calculate new price
+    const newPrice =
+      totalPrice - totalPrice * (discount.factor || 1) - (discount.amount || 0)
+
+    // Update price
+    document.getElementById('totalPrice').innerText = newPrice.toLocaleString(
+      'de-DE',
+      {
+        style: 'currency',
+        currency: 'EUR',
+      }
+    )
+  } else {
+    // Show error
+    M.toast({ html: 'Invalid Discount Code' })
+  }
+}
+
 // Modal Instance
 let modalInstance
 document.addEventListener('DOMContentLoaded', function () {
@@ -115,4 +163,11 @@ const onOpenStart = function () {
         >
     `
   cartItemList.appendChild(totalPriceItem)
+
+  totalPrice.innerText = cartData
+    .reduce((total, product) => total + product.price * product.quantity, 0)
+    .toLocaleString('de-DE', {
+      style: 'currency',
+      currency: 'EUR',
+    })
 }
