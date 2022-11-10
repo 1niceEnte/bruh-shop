@@ -79,5 +79,23 @@
     "image": "winkel.jpg",
     "price": 7.99,
     "unit": null
+  },
+  {
+    "id": 10,
+    "category": ["Gegenstände","Neu"],
+    "title": "TÜV Ehrenmann Prüfung",
+    "description": "Offizielle Tüv Süd Prüfung zum staatlich anerkannten Ehrenmann inklusive Tüv Ehrenmann Prüfsiegel",
+    "image": "tuevehrejpg.jpg",
+    "price": 124.99,
+    "unit": null
+  },
+  {
+    "id": 11,
+    "category": ["Gegenstände","Neu"],
+    "title": "Leberwurst",
+    "description": "",
+    "image": "leberwurst.jpg",
+    "price": 1.99,
+    "unit": null
   }
 ]
