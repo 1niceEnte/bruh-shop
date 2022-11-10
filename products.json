@@ -70,5 +70,14 @@
     "image": "starthilfe.jpg",
     "price": 9.99,
     "unit": null
+  },
+  {
+    "id": 9,
+    "category": ["Gegenstände","Neu"],
+    "title": "180° Winkel",
+    "description": "Gegenstand nur führbahr wenn man den Winkelführerschein besitzt.",
+    "image": "winkel.jpg",
+    "price": 7.99,
+    "unit": null
   }
 ]
