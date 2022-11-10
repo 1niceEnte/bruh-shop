@@ -32,7 +32,7 @@ function applyDiscount() {
 
     // Calculate new price
     const newPrice =
-      totalPrice - totalPrice * (typeof discount.factor !== 'undefined' ? discount.factor : 0) - (typeof discount.amount !== 'undefined' ? discount.amount : 0)
+      totalPrice * (typeof discount.factor !== 'undefined' ? discount.factor : 1) - (typeof discount.amount !== 'undefined' ? discount.amount : 0)
 
     // Update price
     document.getElementById('totalPrice').innerText = newPrice.toLocaleString(
