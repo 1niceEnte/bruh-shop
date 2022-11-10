@@ -3,5 +3,10 @@
     "code": "kauf2zahl3",
     "factor": -0.5,
     "amount": 0
+  },
+  {
+    "code": "amogus",
+    "factor": 0,
+    "amount": 15
   }
 ]
