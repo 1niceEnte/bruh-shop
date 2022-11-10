@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "category": ["Gegenstände","Neu"],
+    "category": ["Auto","Neu"],
     "title": "Fluxkompensator",
     "description": "Geht in den Zigarettenanzünder und macht uhhhhhhhh...",
     "image": "fluxcomp.jpg",
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "category": ["Gegenstände","Neu"],
+    "category": ["Auto","Neu"],
     "title": "Zigarettenanzünder Handylader",
     "description": "Wir haben diesen Handylader speziell entworfen und designed, sodass er in kein einzigen Zigarettenanzünder passt!",
     "image": "carcharger.jpg",
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "category": ["Gegenstände","Neu"],
+    "category": ["Auto","Neu"],
     "title": "Zigarettenanzünder Starthilfekabel",
     "description": "Ist doch blöd die Pole zu finden. Dazu kann man sich selbst Starthilfe geben",
     "image": "starthilfe.jpg",
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "category": ["Gegenstände","Neu"],
+    "category": ["Werkzeug","Neu"],
     "title": "180° Winkel",
     "description": "Gegenstand nur führbahr wenn man den Winkelführerschein besitzt.",
     "image": "winkel.jpg",
@@ -91,11 +91,20 @@
   },
   {
     "id": 11,
-    "category": ["Gegenstände","Neu"],
+    "category": ["Nahrung","Neu"],
     "title": "Leberwurst",
     "description": "",
     "image": "leberwurst.jpg",
     "price": 1.99,
     "unit": null
+  },
+  {
+    "id": 12,
+    "category": ["Materialien","Neu"],
+    "title": "Trumpium",
+    "description": "Trumpium aus den tiefen der USA. Besonders an diesem Material ist, dass es sich nicht aufhört zu drehen und sehr weich ist.",
+    "image": "trumpium.gif",
+    "price": 1.99,
+    "unit": "kg"
   }
 ]
