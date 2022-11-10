@@ -106,5 +106,14 @@
     "image": "trumpium.gif",
     "price": 1.99,
     "unit": "kg"
+  },
+  {
+    "id": 13,
+    "category": ["Neu"],
+    "title": " ",
+    "description": " ",
+    "image": "yes.jpg",
+    "price": -4.20,
+    "unit": "u"
   }
 ]
