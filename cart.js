@@ -31,8 +31,7 @@ function applyDiscount() {
     )
 
     // Calculate new price
-    const newPrice =
-      totalPrice * discount.factor + discount.amount;
+    const newPrice = totalPrice * discount.factor + discount.amount
 
     // Update price
     document.getElementById('totalPrice').innerText = newPrice.toLocaleString(
