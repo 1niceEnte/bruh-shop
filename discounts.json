@@ -1,10 +1,12 @@
 [
   {
     "code": "kauf2zahl3",
+    "amount": 0,
     "factor": 1.5
   },
   {
     "code": "amogus",
-    "amount": 15
+    "amount": 15,
+    "factor":1,
   }
 ]
