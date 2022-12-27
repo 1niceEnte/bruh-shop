@@ -109,7 +109,13 @@ function fillGrid() {
     // Create Card Image
     const image = document.createElement('img')
     image.src = 'products/' + product.image
-    image.style = 'height: 300px; object-fit: cover;'
+    image.style = 'object-fit: cover;'
+    image.height = 300
+    image.className = 'materialboxed'
+    image.setAttribute(
+      'data-caption',
+      `${product.title} - ${product.description}`
+    )
 
     // Create Card Image Button
     const button = document.createElement('a')
@@ -195,6 +201,10 @@ function fillGrid() {
     productGrid.innerHTML =
       '<div class="col s12"><h4>Keine Produkte mit den angegebenen Filtern</h4></div>'
   }
+
+  // Mount materialboxed
+  const materialboxed = document.querySelectorAll('.materialboxed')
+  M.Materialbox.init(materialboxed)
 }
 
 // Get last commit date
