@@ -226,5 +226,16 @@ fetch('https://api.github.com/repos/1niceEnte/bruh-shop/commits/main')
     ).innerText = `Letztes Update: ${lastUpdatedRelative}`
   })
 
+// Spin Logo on double click
+let spinTimeout
+document.getElementById('logo').addEventListener('dblclick', () => {
+  if (spinTimeout) return
+  document.getElementById('logo').classList.add('spin')
+  spinTimeout = setTimeout(() => {
+    document.getElementById('logo').classList.remove('spin')
+    spinTimeout = null
+  }, 1000)
+})
+
 // Update year
 document.getElementById('copyrightYear').innerText = new Date().getFullYear()
