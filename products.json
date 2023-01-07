@@ -41,12 +41,12 @@
     "title": "Unsichtbarkeitssand-Sanduhr",
     "description": "Sie können damit die Zeit beschleunigen. Drehen Sie diese Sanduhr um, der Sand fließt schneller nach unten als Licht.",
     "image": "sanduhr.jpg",
-    "price": 4.20,
+    "price": 4.2,
     "unit": null
   },
   {
     "id": 6,
-    "category": ["Auto","Neu"],
+    "category": ["Auto", "Neu"],
     "title": "Fluxkompensator",
     "description": "Geht in den Zigarettenanzünder und macht uhhhhhhhh...",
     "image": "fluxcomp.jpg",
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "category": ["Auto","Neu"],
+    "category": ["Auto", "Neu"],
     "title": "Zigarettenanzünder Handylader",
     "description": "Wir haben diesen Handylader speziell entworfen und designed, sodass er in kein einzigen Zigarettenanzünder passt!",
     "image": "carcharger.jpg",
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "category": ["Auto","Neu"],
+    "category": ["Auto", "Neu"],
     "title": "Zigarettenanzünder Starthilfekabel",
     "description": "Ist doch blöd die Pole zu finden. Dazu kann man sich selbst Starthilfe geben",
     "image": "starthilfe.jpg",
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "category": ["Werkzeug","Neu"],
+    "category": ["Werkzeug", "Neu"],
     "title": "180° Winkel",
     "description": "Gegenstand nur führbahr wenn man den Winkelführerschein besitzt.",
     "image": "winkel.jpg",
@@ -82,7 +82,7 @@
   },
   {
     "id": 10,
-    "category": ["Gegenstände","Neu"],
+    "category": ["Gegenstände", "Neu"],
     "title": "TÜV Ehrenmann Prüfung",
     "description": "Offizielle Tüv Süd Prüfung zum staatlich anerkannten Ehrenmann inklusive Tüv Ehrenmann Prüfsiegel",
     "image": "tuevehrejpg.jpg",
@@ -91,7 +91,7 @@
   },
   {
     "id": 11,
-    "category": ["Nahrung","Neu"],
+    "category": ["Nahrung", "Neu"],
     "title": "Leberwurst",
     "description": "",
     "image": "leberwurst.jpg",
@@ -100,7 +100,7 @@
   },
   {
     "id": 12,
-    "category": ["Materialien","Neu"],
+    "category": ["Materialien", "Neu"],
     "title": "Trumpium",
     "description": "Trumpium aus den tiefen der USA. Besonders an diesem Material ist, dass es sich nicht aufhört zu drehen und sehr weich ist.",
     "image": "trumpium.gif",
@@ -113,7 +113,16 @@
     "title": " ",
     "description": " ",
     "image": "yes.jpg",
-    "price": -4.20,
+    "price": -4.2,
     "unit": "u"
+  },
+  {
+    "id": 14,
+    "category": ["Neu", "Früchte"],
+    "title": "LSD-Nüsse",
+    "description": "Geniessen sie die Farben des Lebens. Eine leckere Mischung aus gerösteten Nüssen, die ihren Namen von den Initialen \"Lustig, Saftig und Delikat\" tragen. NÜSSE SIND GESUND.",
+    "image": "lsdnut.jpg",
+    "price": 199.99,
+    "unit": "kg"
   }
 ]
