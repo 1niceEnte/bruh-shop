@@ -175,5 +175,17 @@
     "image": "kreissaege.jpg",
     "price": 99.99,
     "unit": "Bagger"
+  },
+  {
+    "id": 17,
+    "category": [
+      "Neu",
+      "Materialien"
+    ],
+    "title": "Amogium",
+    "description": "Amogium ist ein seltenes Material, das nur in den tiefsten Tiefen des Internets gefunden werden kann. Es ist sehr teuer und wird nur von den reichsten Menschen der Welt verwendet.",
+    "image": "amogium.gif",
+    "price": 99999,
+    "unit": "butt"
   }
 ]
