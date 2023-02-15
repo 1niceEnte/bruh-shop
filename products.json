@@ -174,7 +174,7 @@
     "description": "Geniales Werkzeug: Der Bagger mit Kreissäge. Schneidet mühelos Bäume, Sträucher & Beton. Perfekt für die Gartenarbeit!",
     "image": "kreissaege.jpg",
     "price": 99.99,
-    "unit": "Bagger"
+    "unit": null
   },
   {
     "id": 17,
@@ -185,7 +185,19 @@
     "title": "Amogium",
     "description": "Amogium ist ein seltenes Material, das nur in den tiefsten Tiefen des Internets gefunden werden kann. Es ist sehr teuer und wird nur von den reichsten Menschen der Welt verwendet.",
     "image": "amogium.gif",
-    "price": 99999,
-    "unit": "butt"
+    "price": 69,
+    "unit": "kg"
+  },
+  {
+    "id": 18,
+    "category": [
+      "Neu",
+      "Werkzeug"
+    ],
+    "title": "Wasserwaage",
+    "description": "Sorgen Sie mit dieser Wasserwaage nicht nur für eine präzise Messung, sondern auch für eine einfache und effiziente Arbeitsweise bei allen Projekten, die eine genaue Ausrichtung erfordern - ideal für Heimwerker, Bauherren und Profis!",
+    "image": "wasserwaage.png",
+    "price": 14.99,
+    "unit": null
   }
 ]
