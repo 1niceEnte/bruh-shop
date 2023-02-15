@@ -158,7 +158,7 @@
       "Geld"
     ],
     "title": "Geld",
-    "description": "🤑💰💰🤑 Angebot: 💰💰 200€! 👌🔥 Legal und vielseitig einsetzbar in 🇪🇺👀😍. Shoppen🛍️🛍️, essen gehen🍽️🍹🍻 oder 💃🕺, alles ist möglich!",
+    "description": "🤑💰💰🤑 Angebot: 💰💰 200€! 👌🔥 Legal und vielseitig einsetzbar in 🇪🇺👀😍. Shoppen🛍️🛍️, essen gehen🍽️🍹🍻 oder 💃🕺, alles ist möglich! Inklusive Milch ohne Glas.",
     "image": "geld.jpg",
     "price": 201.99,
     "unit": "Glas"
@@ -171,7 +171,7 @@
       "Auto"
     ],
     "title": "Kreissägenbagger",
-    "description": "Geniales Werkzeug: Der Bagger mit Kreissäge. Schneidet mühelos Bäume, Sträucher & Beton. Perfekt für die Gartenarbeit!",
+    "description": "Heizkosten zu hoch? Sägen Sie das Haus in zwei, nur noch halbe Heizkosten! Schneidet mühelos Blumen, Gras & Betonhäuser",
     "image": "kreissaege.jpg",
     "price": 149000,
     "unit": null
@@ -195,7 +195,7 @@
       "Werkzeug"
     ],
     "title": "Wasserwaage",
-    "description": "Sorgen Sie mit dieser Wasserwaage nicht nur für eine präzise Messung, sondern auch für eine einfache und effiziente Arbeitsweise bei allen Projekten, die eine genaue Ausrichtung erfordern - ideal für Heimwerker, Bauherren und Profis!",
+    "description": "Diese Wasserwaage ermöglicht es, die Ebene einer Wasseroberfläche mit Hilfe eines präzisen Wasserpegel-Systems zu messen.",
     "image": "wasserwaage.png",
     "price": 14.99,
     "unit": null
