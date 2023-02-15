@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     )
     .then((data) => {
       // Save data to global variable
+      data.reverse()
       productData = data
 
       // Set the category select to allow dynamic filtering
