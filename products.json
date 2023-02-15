@@ -57,8 +57,7 @@
   {
     "id": 6,
     "category": [
-      "Auto",
-      "Neu"
+      "Auto"
     ],
     "title": "Fluxkompensator",
     "description": "Geht in den Zigarettenanzünder und macht uhhhhhhhh...",
@@ -69,8 +68,7 @@
   {
     "id": 7,
     "category": [
-      "Auto",
-      "Neu"
+      "Auto"
     ],
     "title": "Zigarettenanzünder Handylader",
     "description": "Wir haben diesen Handylader speziell entworfen und designed, sodass er in kein einzigen Zigarettenanzünder passt!",
@@ -81,8 +79,7 @@
   {
     "id": 8,
     "category": [
-      "Auto",
-      "Neu"
+      "Auto"
     ],
     "title": "Zigarettenanzünder Starthilfekabel",
     "description": "Ist doch blöd die Pole zu finden. Dazu kann man sich selbst Starthilfe geben",
@@ -93,8 +90,7 @@
   {
     "id": 9,
     "category": [
-      "Werkzeug",
-      "Neu"
+      "Werkzeug"
     ],
     "title": "180° Winkel",
     "description": "Gegenstand nur führbahr wenn man den Winkelführerschein besitzt.",
@@ -105,8 +101,7 @@
   {
     "id": 10,
     "category": [
-      "Gegenstände",
-      "Neu"
+      "Gegenstände"
     ],
     "title": "TÜV Ehrenmann Prüfung",
     "description": "Offizielle Tüv Süd Prüfung zum staatlich anerkannten Ehrenmann inklusive Tüv Ehrenmann Prüfsiegel",
@@ -117,8 +112,7 @@
   {
     "id": 11,
     "category": [
-      "Nahrung",
-      "Neu"
+      "Nahrung"
     ],
     "title": "Leberwurst",
     "description": "",
@@ -129,8 +123,7 @@
   {
     "id": 12,
     "category": [
-      "Materialien",
-      "Neu"
+      "Materialien"
     ],
     "title": "Trumpium",
     "description": "Trumpium aus den tiefen der USA. Besonders an diesem Material ist, dass es sich nicht aufhört zu drehen und sehr weich ist.",
@@ -140,9 +133,7 @@
   },
   {
     "id": 13,
-    "category": [
-      "Neu"
-    ],
+    "category": [],
     "title": " ",
     "description": " ",
     "image": "yes.jpg",
@@ -152,7 +143,6 @@
   {
     "id": 14,
     "category": [
-      "Neu",
       "Früchte"
     ],
     "title": "LSD-Nüsse",
@@ -177,7 +167,8 @@
     "id": 16,
     "category": [
       "Neu",
-      "Werkzeug"
+      "Werkzeug",
+      "Auto"
     ],
     "title": "Kreissägenbagger",
     "description": "Geniales Werkzeug: Der Bagger mit Kreissäge. Schneidet mühelos Bäume, Sträucher & Beton. Perfekt für die Gartenarbeit!",
