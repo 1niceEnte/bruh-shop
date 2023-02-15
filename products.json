@@ -199,5 +199,17 @@
     "image": "wasserwaage.png",
     "price": 14.99,
     "unit": null
+  },
+  {
+    "id": 18,
+    "category": [
+      "Neu",
+      "Werkzeug"
+    ],
+    "title": "Leisesprecher",
+    "description": "Nervt ihr Lautsprecher oft, da er zu Laut ist? Holen Sie sich den Leisesprecher! Das ist die Lösung",
+    "image": "leisesprecher.png",
+    "price": 225,
+    "unit": null
   }
 ]
