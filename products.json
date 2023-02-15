@@ -172,5 +172,17 @@
     "image": "geld.jpg",
     "price": 201.99,
     "unit": "Glas"
+  },
+  {
+    "id": 16,
+    "category": [
+      "Neu",
+      "Werkzeug"
+    ],
+    "title": "Kreissägenbagger",
+    "description": "Geniales Werkzeug: Der Bagger mit Kreissäge. Schneidet mühelos Bäume, Sträucher & Beton. Perfekt für die Gartenarbeit!",
+    "image": "kreissaege.jpg",
+    "price": 99.99,
+    "unit": "Bagger"
   }
 ]
