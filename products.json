@@ -201,7 +201,7 @@
     "unit": null
   },
   {
-    "id": 18,
+    "id": 19,
     "category": [
       "Neu",
       "Werkzeug"
@@ -211,5 +211,18 @@
     "image": "leisesprecher.png",
     "price": 225,
     "unit": null
+  },
+  {
+    "id": 20,
+    "category": [
+      "Neu",
+      "Gegenstände",
+      "Werkzeug"
+    ],
+    "title": "Gold Laptop",
+    "image": "goldlaptop.png",
+    "description": "Ein goldener Supercomputer aus dem Jahre 1999. Durch seine spezielle Goldbeschichtung generiert er 1 Bitcoin pro Sekunde.",
+    "price": 9999,
+    "unit": ""
   }
 ]
