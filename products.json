@@ -228,7 +228,7 @@
     ],
     "title": "Anti-Reflex Spiegel",
     "image": "mirror.jpg",
-    "description": "Schluss mit störenden Lichtreflexionen! Dank seiner speziellen Beschichtung minimiert unser AntiReflex Spiegel lästige Blendeffekte und sorgt für eine klare und unverfälschte Spiegelung, selbst bei hellem Tageslicht.",
+    "description": "Schluss mit störenden Lichtreflexionen! Dank seiner speziellen Beschichtung minimiert unser AntiReflex Spiegel lästige Blendeffekte und sorgt für eine klare und unverfälschte Spiegelung.",
     "price": 71,
     "unit": ""
   },
@@ -276,8 +276,8 @@
       "Gegenstände"
     ],
     "title": "OneXView Fernglas",
-    "image": "binoculars.png",
-    "description": "Das OneXView Fernglas bietet eine 1-fache Vergrößerung, was bedeutet, dass Sie die Welt durch die Linse genauso sehen, wie sie tatsächlich ist. Keine unnatürlich vergrößerten oder verkleinerten Bilder - stattdessen erleben Sie eine klare und unverfälschte Sicht auf die Umgebung um Sie herum.",
+    "image": "binoculars.jpg",
+    "description": "Das OneXView Fernglas bietet eine 1-fache Vergrößerung, was bedeutet, dass Sie die Welt durch die Linse genauso sehen, wie sie tatsächlich ist.",
     "price": 49.99,
     "unit": ""
   },
