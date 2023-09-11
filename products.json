@@ -154,7 +154,6 @@
   {
     "id": 15,
     "category": [
-      "Neu",
       "Geld"
     ],
     "title": "Geld",
@@ -166,7 +165,6 @@
   {
     "id": 16,
     "category": [
-      "Neu",
       "Werkzeug",
       "Auto"
     ],
@@ -179,7 +177,6 @@
   {
     "id": 17,
     "category": [
-      "Neu",
       "Materialien"
     ],
     "title": "Amogium",
@@ -191,7 +188,6 @@
   {
     "id": 18,
     "category": [
-      "Neu",
       "Werkzeug"
     ],
     "title": "Wasserwaage",
@@ -203,7 +199,6 @@
   {
     "id": 19,
     "category": [
-      "Neu",
       "Werkzeug"
     ],
     "title": "Leisesprecher",
@@ -215,7 +210,6 @@
   {
     "id": 20,
     "category": [
-      "Neu",
       "Gegenstände",
       "Werkzeug"
     ],
@@ -223,6 +217,92 @@
     "image": "goldlaptop.png",
     "description": "Ein goldener Supercomputer aus dem Jahre 1999. Durch seine spezielle Goldbeschichtung generiert er 1 Bitcoin pro Sekunde.",
     "price": 9999,
+    "unit": ""
+  },
+  {
+    "id": 21,
+    "category": [
+      "Neu",
+      "Möbel",
+      "Gegenstände"
+    ],
+    "title": "Anti-Reflex Spiegel",
+    "image": "mirror.jpg",
+    "description": "Schluss mit störenden Lichtreflexionen! Dank seiner speziellen Beschichtung minimiert unser AntiReflex Spiegel lästige Blendeffekte und sorgt für eine klare und unverfälschte Spiegelung, selbst bei hellem Tageslicht.",
+    "price": 71,
+    "unit": ""
+  },
+  {
+    "id": 22,
+    "category": [
+      "Neu",
+      "Gegenstände",
+      "Biochemie"
+    ],
+    "title": "11g Corona",
+    "image": "rona.jpg",
+    "description": "Wollen Sie es ihren Feinden mal so richtig Heimzahlen? Verbreiten Sie Corona. Aktuell denkt keiner an den altbekannten Virus mehr.",
+    "price": 10,
+    "unit": "11g"
+  },
+  {
+    "id": 23,
+    "category": [
+      "Neu",
+      "Computer-Hardware"
+    ],
+    "title": "Seifen Tastatur",
+    "image": "soapboard.jpg",
+    "description": "Die Zukunft der Tastaturen ist hier, und sie ist sauberer und hygienischer als je zuvor - die Seifentastatur! Diese innovative Tastatur verändert Ihre Schreiberfahrung, indem sie modernes Design, Funktionalität und Gesundheitsbewusstsein vereint.",
+    "price": 56,
+    "unit": ""
+  },
+  {
+    "id": 24,
+    "category": [
+      "Neu",
+      "PKW"
+    ],
+    "title": "Ford Focus",
+    "image": "focus.png",
+    "description": "Für Sie, zum reinkaggern.",
+    "price": 399,
+    "unit": ""
+  },
+  {
+    "id": 25,
+    "category": [
+      "Neu",
+      "Gegenstände"
+    ],
+    "title": "OneXView Fernglas",
+    "image": "binoculars.png",
+    "description": "Das OneXView Fernglas bietet eine 1-fache Vergrößerung, was bedeutet, dass Sie die Welt durch die Linse genauso sehen, wie sie tatsächlich ist. Keine unnatürlich vergrößerten oder verkleinerten Bilder - stattdessen erleben Sie eine klare und unverfälschte Sicht auf die Umgebung um Sie herum.",
+    "price": 49.99,
+    "unit": ""
+  },
+  {
+    "id": 26,
+    "category": [
+      "Neu",
+      "Gegenstände"
+    ],
+    "title": "H2O-Link HDMI",
+    "image": "hdmi_gardena.png",
+    "description": "Der H2O-Link HDMI Adapter ermöglicht die drahtlose Übertragung von HDMI-Signalen über Wasser und liefert ein außergewöhnlich flüssiges Bild für ein unvergleichliches Sehvergnügen.",
+    "price": 14.99,
+    "unit": ""
+  },
+  {
+    "id": 27,
+    "category": [
+      "Neu",
+      "Gegenstände"
+    ],
+    "title": "ClearView Mattglas Brille",
+    "image": "matt_glasses.png",
+    "description": "Die ClearView Mattglas Brille bietet eine einzigartige, matte Sicht, die Blendungen minimiert und die Augen angenehm entlastet.",
+    "price": 124.99,
     "unit": ""
   }
 ]
