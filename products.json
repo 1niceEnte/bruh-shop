@@ -316,5 +316,17 @@
     "description": "Käse halt. Oder so",
     "price": 18,
     "unit": "kg"
+  },
+  {
+    "id": 29,
+    "category": [
+      "Neu",
+      "Nahrung"
+    ],
+    "title": "Gönergy - Raspberry Cheesecake",
+    "image": "gonergy.webp",
+    "description": "Schmeckt nig so legga, aber hey trend und so oh und limitierte auflage",
+    "price": 10,
+    "unit": "Pack"
   }
 ]
