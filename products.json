@@ -345,7 +345,7 @@
     "id": 31,
     "category": [
       "Neu",
-      "Nahrung"
+      "Gegenstände"
     ],
     "title": "Eintrittskarte Butzbach Erwachsenenvollzug",
     "image": "butzbach.png",
@@ -363,6 +363,30 @@
     "image": "3cent.jpg",
     "description": "Limitierte Sonderauflage der europäischen 4 Cent Münze. Angebot gilt solange der Vorrat reicht.",
     "price": 0.04,
+    "unit": ""
+  },
+  {
+    "id": 33,
+    "category": [
+      "Neu",
+      "Nahrung"
+    ],
+    "title": "Döner Hawaii",
+    "image": "doener.jpg",
+    "description": "Weis nicht man :? Dönerpreisbremse aber hier aktiv",
+    "price": 1,
+    "unit": ""
+  },
+  {
+    "id": 34,
+    "category": [
+      "Neu",
+      "Gegenstände"
+    ],
+    "title": "Männer Hantel",
+    "image": "hantel.png",
+    "description": "Mit dieser männlichen Männer Hantel bekommen Sie nach 4 Tagen ein Sixpack - Studien beweisen dies vielleicht oder so.",
+    "price": 112,
     "unit": ""
   }
 ]
