@@ -253,7 +253,7 @@
     ],
     "title": "Seifen Tastatur",
     "image": "soapboard.jpg",
-    "description": "Die Zukunft der Tastaturen ist hier, und sie ist sauberer und hygienischer als je zuvor - die Seifentastatur! Diese innovative Tastatur verändert Ihre Schreiberfahrung, indem sie modernes Design, Funktionalität und Gesundheitsbewusstsein vereint.",
+    "description": "Diese innovative Tastatur verändert Ihre Schreiberfahrung, indem sie modernes Design, Funktionalität und Gesundheitsbewusstsein vereint.",
     "price": 56,
     "unit": ""
   },
@@ -304,5 +304,17 @@
     "description": "Die ClearView Mattglas Brille bietet eine einzigartige, matte Sicht, die Blendungen minimiert und die Augen angenehm entlastet.",
     "price": 124.99,
     "unit": ""
+  },
+  {
+    "id": 28,
+    "category": [
+      "Neu",
+      "Nahrung"
+    ],
+    "title": "Ziegenfrischkäse",
+    "image": "kaese.png",
+    "description": "Käse halt. Oder so",
+    "price": 18,
+    "unit": "kg"
   }
 ]
