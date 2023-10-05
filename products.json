@@ -323,10 +323,46 @@
       "Neu",
       "Nahrung"
     ],
-    "title": "Gönergy - Raspberry Cheesecake",
+    "title": "Gönergy - Klowasser Geschmack",
     "image": "gonergy.webp",
     "description": "Schmeckt nig so legga, aber hey trend und so oh und limitierte auflage",
     "price": 10,
     "unit": "Pack"
+  },
+  {
+    "id": 30,
+    "category": [
+      "Neu",
+      "Nahrung"
+    ],
+    "title": "bo'oh'o'wa'er",
+    "image": "woodah.jpg",
+    "description": "Ladies and gentlemen, feast yer ears on the one and only Bo Ol O Woodah! This 'ere elixir, a true masterpiece, sourced from the purest springs of our fair isle, it is.",
+    "price": 1.99,
+    "unit": ""
+  },
+  {
+    "id": 31,
+    "category": [
+      "Neu",
+      "Nahrung"
+    ],
+    "title": "Eintrittskarte Butzbach Erwachsenenvollzug",
+    "image": "butzbach.png",
+    "description": "Dies ist Ihre Gelegenheit, den Alltag hinter sich zu lassen und sich in ein Abenteuer zu stürzen, das Sie nie vergessen werden.",
+    "price": 1.99,
+    "unit": ""
+  },
+  {
+    "id": 32,
+    "category": [
+      "Neu",
+      "Gegenstände"
+    ],
+    "title": "3 Cent Münze",
+    "image": "3cent.jpg",
+    "description": "Limitierte Sonderauflage der europäischen 4 Cent Münze. Angebot gilt solange der Vorrat reicht.",
+    "price": 0.04,
+    "unit": ""
   }
 ]
