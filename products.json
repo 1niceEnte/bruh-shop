@@ -388,5 +388,17 @@
     "description": "Mit dieser männlichen Männer Hantel bekommen Sie nach 4 Tagen ein Sixpack - Studien beweisen dies vielleicht oder so.",
     "price": 112,
     "unit": ""
+  },
+  {
+    "id": 35,
+    "category": [
+      "Neu",
+      "Gegenstände"
+    ],
+    "title": "Buffbolzen Shirt",
+    "image": "buffshirt.png",
+    "description": "Mit diesem hingucker Rizzen Sie einfach jeden im Handumdrehen auf.",
+    "price": 29,
+    "unit": ""
   }
 ]
