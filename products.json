@@ -400,5 +400,17 @@
     "description": "Mit diesem hingucker Rizzen Sie einfach jeden im Handumdrehen auf.",
     "price": 29,
     "unit": ""
+  },
+  {
+    "id": 36,
+    "category": [
+      "Neu",
+      "Nahrung"
+    ],
+    "title": "Snovka",
+    "image": "snovka.png",
+    "description": "Der Snovka ist ein Fließgewässer im Zentrum von Belarus. Abgefüllt und in Flaschen verpackt könnte man denken es wäre tatsächlich Vodka",
+    "price": 64.99,
+    "unit": ""
   }
 ]
