@@ -222,7 +222,6 @@
   {
     "id": 21,
     "category": [
-      "Neu",
       "Möbel",
       "Gegenstände"
     ],
@@ -235,7 +234,6 @@
   {
     "id": 22,
     "category": [
-      "Neu",
       "Gegenstände",
       "Biochemie"
     ],
@@ -260,7 +258,6 @@
   {
     "id": 24,
     "category": [
-      "Neu",
       "PKW"
     ],
     "title": "Ford Focus",
@@ -272,7 +269,6 @@
   {
     "id": 25,
     "category": [
-      "Neu",
       "Gegenstände"
     ],
     "title": "OneXView Fernglas",
@@ -284,7 +280,6 @@
   {
     "id": 26,
     "category": [
-      "Neu",
       "Gegenstände"
     ],
     "title": "H2O-Link HDMI",
@@ -296,7 +291,6 @@
   {
     "id": 27,
     "category": [
-      "Neu",
       "Gegenstände"
     ],
     "title": "ClearView Mattglas Brille",
@@ -308,7 +302,6 @@
   {
     "id": 28,
     "category": [
-      "Neu",
       "Nahrung"
     ],
     "title": "Ziegenfrischkäse",
@@ -320,7 +313,6 @@
   {
     "id": 29,
     "category": [
-      "Neu",
       "Nahrung"
     ],
     "title": "Gönergy - Klowasser Geschmack",
@@ -332,7 +324,6 @@
   {
     "id": 30,
     "category": [
-      "Neu",
       "Nahrung"
     ],
     "title": "bo'oh'o'wa'er",
@@ -344,7 +335,6 @@
   {
     "id": 31,
     "category": [
-      "Neu",
       "Gegenstände"
     ],
     "title": "Eintrittskarte Butzbach Erwachsenenvollzug",
@@ -356,7 +346,6 @@
   {
     "id": 32,
     "category": [
-      "Neu",
       "Gegenstände"
     ],
     "title": "3 Cent Münze",
@@ -368,7 +357,6 @@
   {
     "id": 33,
     "category": [
-      "Neu",
       "Nahrung"
     ],
     "title": "Döner Hawaii",
@@ -380,7 +368,6 @@
   {
     "id": 34,
     "category": [
-      "Neu",
       "Gegenstände"
     ],
     "title": "Männer Hantel",
@@ -392,7 +379,6 @@
   {
     "id": 35,
     "category": [
-      "Neu",
       "Gegenstände"
     ],
     "title": "Buffbolzen Shirt",
@@ -411,6 +397,18 @@
     "image": "snovka.png",
     "description": "Der Snovka ist ein Fließgewässer im Zentrum von Belarus. Abgefüllt und in Flaschen verpackt könnte man denken es wäre tatsächlich Vodka",
     "price": 64.99,
+    "unit": ""
+  },
+  {
+    "id": 37,
+    "category": [
+      "Neu",
+      "Gegenstände"
+    ],
+    "title": "Parkticket",
+    "image": "parking.jpg",
+    "description": "Die Spesen-Abrechnung geht mir auf den Sack!",
+    "price": 11.90,
     "unit": ""
   }
 ]
