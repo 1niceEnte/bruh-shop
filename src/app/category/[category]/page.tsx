@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation'
-import { getProductsByCategory, getAllCategories } from '@/lib/data'
+import { getProductsByCategory, getAllCategories, encodeCategoryForUrl, decodeCategoryFromUrl, isValidCategory } from '@/lib/data'
 import CategoryPageClient from './CategoryPageClient'
 
 // Generate static params for all categories
 export function generateStaticParams() {
   return getAllCategories().map((category) => ({
-    category: encodeURIComponent(category),
+    category: encodeCategoryForUrl(category),
   }))
 }
 
@@ -17,11 +17,9 @@ interface CategoryPageProps {
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const resolvedParams = await params
-  const category = decodeURIComponent(resolvedParams.category)
+  const category = decodeCategoryFromUrl(resolvedParams.category)
 
-  const allCategories = getAllCategories()
-
-  if (!allCategories.includes(category)) {
+  if (!isValidCategory(category)) {
     notFound()
   }
 

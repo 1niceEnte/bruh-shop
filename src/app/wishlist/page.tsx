@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 import { useWishlistStore } from '@/store/wishlistStore'
 import { useCartStore } from '@/store/cartStore'
-import { formatPrice } from '@/lib/data'
+import { formatPrice, getImagePath } from '@/lib/data'
 
 export default function WishlistPage() {
   const { items, removeItem, clearWishlist } = useWishlistStore()
@@ -99,7 +99,7 @@ export default function WishlistPage() {
                   <div className='relative aspect-square overflow-hidden bg-gray-100'>
                     <Link href={`/product/${product.id}`}>
                       <Image
-                        src={`/images/products/${product.image}`}
+                        src={getImagePath(`/images/products/${product.image}`)}
                         alt={product.title}
                         fill
                         className='object-cover hover:scale-105 transition-transform duration-300'

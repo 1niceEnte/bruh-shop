@@ -14,7 +14,7 @@ import {
 import { motion } from 'framer-motion'
 
 import { useCartStore } from '@/store/cartStore'
-import { formatPrice } from '@/lib/data'
+import { formatPrice, getImagePath } from '@/lib/data'
 import { CustomerInfo } from '@/types'
 import GooglePayButtonComponent from '@/components/GooglePayButton'
 
@@ -681,7 +681,7 @@ export default function CheckoutPage() {
                   >
                     <div className='relative w-16 h-16 flex-shrink-0'>
                       <Image
-                        src={`/images/products/${item.product.image}`}
+                                                  src={getImagePath(`/images/products/${item.product.image}`)}
                         alt={item.product.title}
                         fill
                         className='object-cover rounded-md'

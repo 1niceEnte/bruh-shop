@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { Filter, Grid, List } from 'lucide-react'
 import ProductCard from '@/components/ProductCard'
-import { getAllCategories, formatPrice } from '@/lib/data'
+import { getAllCategories, formatPrice, getImagePath, encodeCategoryForUrl } from '@/lib/data'
 import { Product } from '@/types'
 
 interface CategoryPageClientProps {
@@ -192,13 +192,13 @@ export default function CategoryPageClient({
                       .filter((cat) => cat !== category)
                       .slice(0, 8)
                       .map((cat) => (
-                        <a
+                        <Link
                           key={cat}
-                          href={`/category/${encodeURIComponent(cat)}`}
+                          href={`/category/${encodeCategoryForUrl(cat)}`}
                           className='block text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:underline'
                         >
                           {cat}
-                        </a>
+                        </Link>
                       ))}
                   </div>
                 </div>
@@ -229,7 +229,7 @@ export default function CategoryPageClient({
                       <div className='flex'>
                         <div className='w-48 h-48 flex-shrink-0'>
                           <img
-                            src={`/images/products/${product.image}`}
+                            src={getImagePath(`/images/products/${product.image}`)}
                             alt={product.title}
                             className='w-full h-full object-cover'
                           />

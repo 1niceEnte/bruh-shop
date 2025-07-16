@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Heart, ShoppingCart, Star } from 'lucide-react'
 import { Product } from '@/types'
-import { formatPrice } from '@/lib/data'
+import { formatPrice, getImagePath } from '@/lib/data'
 import { useCartStore } from '@/store/cartStore'
 import { useWishlistStore } from '@/store/wishlistStore'
 import { motion } from 'framer-motion'
@@ -53,11 +53,11 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
       className='group'
     >
       <Link href={`/product/${product.id}`}>
-        <div className='bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200 hover:border-blue-300'>
+        <div className='bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-400'>
           {/* Image container */}
-          <div className='relative aspect-square overflow-hidden bg-gray-100'>
+          <div className='relative aspect-square overflow-hidden bg-gray-100 dark:bg-gray-700'>
             <Image
-              src={`/images/products/${product.image}`}
+              src={getImagePath(`/images/products/${product.image}`)}
               alt={product.title}
               fill
               className='object-cover group-hover:scale-105 transition-transform duration-300'
@@ -124,12 +124,12 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
           {/* Content */}
           <div className='p-4 space-y-3'>
             {/* Title */}
-            <h3 className='font-semibold text-gray-900 line-clamp-2 text-sm group-hover:text-blue-600 transition-colors'>
+            <h3 className='font-semibold text-gray-900 dark:text-white line-clamp-2 text-sm group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors'>
               {product.title}
             </h3>
 
             {/* Description */}
-            <p className='text-gray-600 text-xs line-clamp-2'>
+            <p className='text-gray-600 dark:text-gray-300 text-xs line-clamp-2'>
               {product.description}
             </p>
 
@@ -149,7 +149,7 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
                   />
                 ))}
               </div>
-              <span className='text-xs text-gray-500'>
+              <span className='text-xs text-gray-500 dark:text-gray-400'>
                 {rating.toFixed(1)} ({reviewCount})
               </span>
             </div>
@@ -157,11 +157,11 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
             {/* Price */}
             <div className='flex items-center justify-between'>
               <div>
-                <span className='text-lg font-bold text-gray-900'>
+                <span className='text-lg font-bold text-gray-900 dark:text-white'>
                   {formatPrice(product.price)}
                 </span>
                 {product.unit && (
-                  <span className='text-xs text-gray-500 ml-1'>
+                  <span className='text-xs text-gray-500 dark:text-gray-400 ml-1'>
                     / {product.unit}
                   </span>
                 )}

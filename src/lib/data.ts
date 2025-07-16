@@ -5,6 +5,20 @@ import discountsData from '../../data/discounts.json'
 export const products: Product[] = productsData as Product[]
 export const discounts: Discount[] = discountsData as Discount[]
 
+// Utility function to handle image paths correctly for GitHub Pages
+export const getImagePath = (imagePath: string): string => {
+  // Check if we're in production and have a basePath
+  const basePath = process.env.NODE_ENV === 'production' ? '/bruh-shop' : ''
+
+  // If the path already starts with basePath, don't add it again
+  if (imagePath.startsWith(basePath)) {
+    return imagePath
+  }
+
+  // Add basePath for production builds
+  return `${basePath}${imagePath.startsWith('/') ? imagePath : `/${imagePath}`}`
+}
+
 export const getProductById = (id: number): Product | undefined => {
   return products.find((product) => product.id === id)
 }
@@ -83,4 +97,27 @@ export const formatPrice = (price: number): string => {
     style: 'currency',
     currency: 'EUR',
   }).format(price)
+}
+
+// Utility function to handle category URL encoding safely
+export const encodeCategoryForUrl = (category: string): string => {
+  // Use encodeURIComponent but also handle potential double-encoding issues
+  return encodeURIComponent(category).replace(/'/g, '%27')
+}
+
+export const decodeCategoryFromUrl = (encodedCategory: string): string => {
+  try {
+    // Decode and normalize the category name
+    return decodeURIComponent(encodedCategory).normalize('NFC')
+  } catch (error) {
+    // Fallback for malformed URLs
+    console.warn('Failed to decode category URL:', encodedCategory, error)
+    return encodedCategory
+  }
+}
+
+// Enhanced category validation
+export const isValidCategory = (category: string): boolean => {
+  const allCategories = getAllCategories()
+  return allCategories.includes(category)
 }
