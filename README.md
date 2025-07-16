@@ -1,4 +1,4 @@
-# 🛍️ Buffbolzen Shop - Professional E-Commerce Platform
+# 🛍️ Buffbolzen Shop - Germanys most professional E-Commerce Platform
 
 A modern, fully-featured e-commerce shop built with Next.js 15, TypeScript, and Tailwind CSS. This professional shopping platform showcases unique products with a complete shopping experience including cart management, wishlist functionality, and a full checkout flow.
 
