@@ -1,12 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import './globals.css'
 import Header from '@/components/Header'
 import CartSidebar from '@/components/CartSidebar'
 import { ThemeProvider } from '@/contexts/ThemeContext'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Buffbolzen Shop - Professioneller Online-Shop',
@@ -23,9 +20,12 @@ export default function RootLayout({
   return (
     <html lang='de'>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <script src='https://pay.google.com/gp/p/js/pay.js' async></script>
       </head>
-      <body className={inter.className}>
+      <body className="font-sans">
         <ThemeProvider>
           <div className='min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200'>
             <Header />
