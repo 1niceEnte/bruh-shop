@@ -8,7 +8,7 @@ export const discounts: Discount[] = discountsData as Discount[]
 // Utility function to handle image paths correctly for GitHub Pages
 export const getImagePath = (imagePath: string): string => {
   // Check if we're in production and have a basePath
-  const basePath = process.env.NODE_ENV === 'production' ? '/bruh-shop' : ''
+  const basePath = process.env.NODE_ENV === 'production' ? '' : ''
 
   // If the path already starts with basePath, don't add it again
   if (imagePath.startsWith(basePath)) {
