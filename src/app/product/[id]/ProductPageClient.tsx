@@ -14,7 +14,7 @@ import {
 } from 'lucide-react'
 import { motion } from 'framer-motion'
 
-import { products, formatPrice } from '@/lib/data'
+import { products, formatPrice, getImagePath } from '@/lib/data'
 import { useCartStore } from '@/store/cartStore'
 import { useWishlistStore } from '@/store/wishlistStore'
 import ProductCard from '@/components/ProductCard'
@@ -100,9 +100,9 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
 
   // Mock product images (using the same image multiple times for demo)
   const productImages = [
-    `/images/products/${product.image}`,
-    `/images/products/${product.image}`,
-    `/images/products/${product.image}`,
+    getImagePath(`/images/products/${product.image}`),
+    getImagePath(`/images/products/${product.image}`),
+    getImagePath(`/images/products/${product.image}`),
   ]
 
   return (

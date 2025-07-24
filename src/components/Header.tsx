@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import { Search, ShoppingCart, Heart, Menu, X } from 'lucide-react'
 import { useCartStore } from '@/store/cartStore'
 import { useWishlistStore } from '@/store/wishlistStore'
-import { getAllCategories } from '@/lib/data'
+import { getAllCategories, encodeCategoryForUrl } from '@/lib/data'
 import ThemeToggle from '@/components/ThemeToggle'
 
 export default function Header() {
@@ -125,7 +125,7 @@ export default function Header() {
             {categories.slice(0, 8).map((category) => (
               <Link
                 key={category}
-                href={`/category/${encodeURIComponent(category)}`}
+                href={`/category/${encodeCategoryForUrl(category)}`}
                 className='text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium whitespace-nowrap'
               >
                 {category}
@@ -174,7 +174,7 @@ export default function Header() {
             {categories.map((category) => (
               <Link
                 key={category}
-                href={`/category/${encodeURIComponent(category)}`}
+                href={`/category/${encodeCategoryForUrl(category)}`}
                 className='block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium'
                 onClick={() => setIsMenuOpen(false)}
               >

@@ -140,7 +140,7 @@ export default function HomePage() {
                   </h3>
                   <button
                     onClick={() => setShowFilters(!showFilters)}
-                    className='lg:hidden p-2 hover:bg-gray-100 rounded'
+                    className='lg:hidden p-2 hover:bg-gray-100 dark:hover:bg-gray-600 rounded text-gray-600 dark:text-gray-300'
                   >
                     <SlidersHorizontal className='h-5 w-5' />
                   </button>
@@ -153,7 +153,7 @@ export default function HomePage() {
                 >
                   {/* Search */}
                   <div>
-                    <label className='block text-sm font-medium text-gray-700 mb-2'>
+                    <label className='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2'>
                       Suche
                     </label>
                     <input
@@ -161,13 +161,13 @@ export default function HomePage() {
                       placeholder='Produkt suchen...'
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
-                      className='w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+                      className='w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white dark:placeholder-gray-400'
                     />
                   </div>
 
                   {/* Categories */}
                   <div>
-                    <h4 className='text-sm font-medium text-gray-700 mb-3'>
+                    <h4 className='text-sm font-medium text-gray-700 dark:text-gray-300 mb-3'>
                       Kategorien
                     </h4>
                     <div className='space-y-2 max-h-48 overflow-y-auto'>
@@ -179,7 +179,7 @@ export default function HomePage() {
                             onChange={() => handleCategoryToggle(category)}
                             className='h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded'
                           />
-                          <span className='ml-3 text-sm text-gray-700'>
+                          <span className='ml-3 text-sm text-gray-700 dark:text-gray-300'>
                             {category}
                           </span>
                         </label>
@@ -189,7 +189,7 @@ export default function HomePage() {
 
                   {/* Price Range */}
                   <div>
-                    <h4 className='text-sm font-medium text-gray-700 mb-3'>
+                    <h4 className='text-sm font-medium text-gray-700 dark:text-gray-300 mb-3'>
                       Preis
                     </h4>
                     <div className='space-y-3'>
@@ -204,9 +204,9 @@ export default function HomePage() {
                               min: Number(e.target.value) || 0,
                             }))
                           }
-                          className='w-full p-2 border border-gray-300 rounded text-sm'
+                          className='w-full p-2 border border-gray-300 dark:border-gray-600 rounded text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-white'
                         />
-                        <span className='text-gray-500'>-</span>
+                        <span className='text-gray-500 dark:text-gray-400'>-</span>
                         <input
                           type='number'
                           placeholder='Max'
@@ -217,7 +217,7 @@ export default function HomePage() {
                               max: Number(e.target.value) || maxPrice,
                             }))
                           }
-                          className='w-full p-2 border border-gray-300 rounded text-sm'
+                          className='w-full p-2 border border-gray-300 dark:border-gray-600 rounded text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-white'
                         />
                       </div>
                       <input
@@ -239,7 +239,7 @@ export default function HomePage() {
                   {/* Clear Filters */}
                   <button
                     onClick={clearAllFilters}
-                    className='w-full bg-gray-100 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-200 transition-colors'
+                    className='w-full bg-gray-100 dark:bg-gray-600 text-gray-700 dark:text-gray-200 py-2 px-4 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-500 transition-colors'
                   >
                     Filter zurücksetzen
                   </button>
@@ -252,10 +252,10 @@ export default function HomePage() {
               {/* Header */}
               <div className='flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6'>
                 <div>
-                  <h2 className='text-2xl font-bold text-gray-900'>
+                  <h2 className='text-2xl font-bold text-gray-900 dark:text-white'>
                     Alle Produkte
                   </h2>
-                  <p className='text-gray-600 mt-1'>
+                  <p className='text-gray-600 dark:text-gray-400 mt-1'>
                     {filteredProducts.length} von {products.length} Produkten
                   </p>
                 </div>
@@ -264,7 +264,7 @@ export default function HomePage() {
                   <select
                     value={sortBy}
                     onChange={(e) => setSortBy(e.target.value as any)}
-                    className='p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+                    className='p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white'
                   >
                     <option value='newest'>Neueste zuerst</option>
                     <option value='price-asc'>Preis: Niedrig zu Hoch</option>
@@ -287,13 +287,13 @@ export default function HomePage() {
                 </div>
               ) : (
                 <div className='text-center py-12'>
-                  <div className='w-24 h-24 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center'>
-                    <Filter className='h-12 w-12 text-gray-400' />
+                  <div className='w-24 h-24 mx-auto mb-4 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center'>
+                    <Filter className='h-12 w-12 text-gray-400 dark:text-gray-500' />
                   </div>
-                  <h3 className='text-lg font-medium text-gray-900 mb-2'>
+                  <h3 className='text-lg font-medium text-gray-900 dark:text-white mb-2'>
                     Keine Produkte gefunden
                   </h3>
-                  <p className='text-gray-500 mb-4'>
+                  <p className='text-gray-500 dark:text-gray-400 mb-4'>
                     Versuchen Sie, Ihre Suchkriterien anzupassen oder Filter zu
                     entfernen.
                   </p>

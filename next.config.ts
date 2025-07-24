@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   // Uncomment and set the basePath if your repository is not at the root domain
-  basePath: '/bruh-shop',
+  basePath: '',
 }
 
 export default nextConfig
